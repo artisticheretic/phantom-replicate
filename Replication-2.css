@@ -2,7 +2,7 @@
 
 html{
     scroll-behavior: smooth;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Unbounded', 'arial';
 }
 
 /* Head Of The Page  */
@@ -36,7 +36,6 @@ html{
     color: #e0859a;
 }
 .maintext{
-    font-family: 'Unbounded', cursive;
     font-weight: bold;
     font-size: 2.6rem;
     color: #4b4b4b;
@@ -52,7 +51,6 @@ html{
     color: #e0859a;
 }
 .subtext{
-    font-family: 'Unbounded', cursive;
     color: #4b4b4b;
     margin-top: 2.5rem;
     margin-bottom: 80px;
