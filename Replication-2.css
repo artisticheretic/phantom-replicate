@@ -4,11 +4,24 @@ html{
     scroll-behavior: smooth;
     font-family: 'Unbounded', 'arial';
 }
+body{
+    margin: 0;
+}
 
-/* Head Of The Page  */
+/* Head Of The Page */
 
-#home{
-    margin: 120px 125px;
+.mar{
+        margin-top: 7em;
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1.5em;
+}
+@media only screen and (min-width:1200px){
+    .mar{
+        max-width: 1200px;
+    }
 }
 #logos a{
     display: flex;
@@ -60,7 +73,7 @@ html{
 /* Body Of The Page  */
 
 #bodies{
-    margin: 120px 125px;
+    margin-top: 7em;
 }
 .boxes{
     display: flex;
@@ -87,6 +100,19 @@ html{
 }
 .boxes > div{
     width: calc(33.3333333% - 25px);
+    width: 100%;
+}
+@media only screen and (min-width: 500px){
+    .boxes > div{
+        width: calc(50% - 25px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (min-width: 768px){
+    .boxes > div{
+        width: calc(33.3333333% - 25px);
+    }
 }
 .text-trans{
     position: absolute;
@@ -95,6 +121,7 @@ html{
 }
 .text-overlay{
     letter-spacing: 4px;
+    font-size: 0.995rem;
 }
 .main-images::before{
     content: "";
@@ -110,6 +137,10 @@ html{
 .main-images:hover::before{
     transform: scale(1.1);
     opacity: 0;
+}
+.imgres{
+    width: 100%;
+    height: auto;
 }
 #img-overlay1 .main-images::before{
     background-color: #e0859a;
@@ -152,6 +183,7 @@ html{
     visibility: hidden;
     font-weight: lighter;
     z-index: 3;
+    font-size: 0.85rem;
 }
 .main-images img{
     transform: scale(1.0);
@@ -162,6 +194,7 @@ html{
 }
 .main-images:hover p{
     visibility: visible;
+
 }
 .main-images div{
     display: flex;
@@ -178,13 +211,18 @@ html{
 
 #foot{
     display: flex;
-    margin: 0;
     letter-spacing: 6px;
     justify-content: space-between;
-    margin: 70px 125px;
+    margin-top: 7em;
+}
+@media only screen and (max-width: 500px){
+    #foot{
+        flex-direction: column;
+    }
 }
 #form{
     flex-basis: 60%;
+    
 }
 .getintouch{
     color: #4b4b4b;
@@ -195,7 +233,6 @@ html{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 18px;
 }
 .forms{
     width: 48%;
@@ -303,6 +340,7 @@ footer{
     color: #7f7f7f;
     font-weight: lighter;
     font-size: 11px;
+    padding-bottom: 7em;
 }
 .end a{
     text-decoration: none;
@@ -318,6 +356,4 @@ footer{
     margin: 0;
     padding: 0;
     background-color: #e9eded;
-    height: 100vh;
-    width: 100vw;
 }
